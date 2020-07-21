@@ -1,0 +1,512 @@
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" type="text/css" href="navihome.css">
+
+		<style>
+		
+		
+		<!--For Dancing wave-->
+		@import url("https://fonts.googleapis.com/css?family=Muli");
+		
+		*, *:before, *:after {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		html, body {
+			font-size: 62.5%;
+			background-color: #00091B;
+			font-family: 'Muli', Helvetica, sans-serif;
+		}
+		
+		.container {
+			position: absolute;
+			width: 17rem;
+			height: 10rem;
+			left: 30%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		.text {
+			color: #fff;
+			font-size: 6rem;
+			font-weight: 900;
+			display: inline-block;
+			position: absolute;
+			bottom: 0;
+			-webkit-animation: text 1050ms ease-in infinite;
+			animation: text 1050ms ease-in infinite;
+			-webkit-transform: translatez(0);
+			transform: translatez(0);
+		}
+		
+		.text-c {
+			left: 0.8rem;
+			-webkit-transform: translate3d(0, -4rem, 0);
+			transform: translate3d(0, -4rem, 0);
+			-webkit-animation: text-c 1050ms ease-in infinite;
+			animation: text-c 1050ms ease-in infinite;
+		}
+		
+		.text-r {
+			left: 5.4rem;
+			-webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+		}
+
+		.text-e {
+			left: 9.8rem;
+			-webkit-animation-delay: 230ms;
+			animation-delay: 230ms;
+		}
+		
+		.text-d {
+			left: 13.6rem;
+			-webkit-animation-delay: 310ms;
+			animation-delay: 310ms;
+		}
+		
+		.text-i {
+			left: 17.8rem;
+			-webkit-animation-delay: 390ms;
+			animation-delay: 390ms;
+		}
+		
+		.text-t {
+			left: 19.9rem;
+			-webkit-animation-delay: 470ms;
+			animation-delay: 470ms;
+		}
+		
+		.text-m {
+			left: 28.5rem;
+			-webkit-animation-delay: 550ms;
+			animation-delay: 550ms;
+		}
+		
+		.text-a {
+			left: 33.8rem;
+			-webkit-animation-delay: 630ms;
+			animation-delay: 630ms;
+		}
+		
+		.text-n {
+			left: 38rem;
+			-webkit-animation-delay: 710ms;
+			animation-delay: 710ms;
+		}
+		
+		.text-aa {
+			left:42.6rem;
+			-webkit-animation-delay: 790ms;
+			animation-delay: 790ms;
+		}
+		
+		.text-g {
+			left: 46.49rem;
+			-webkit-animation-delay: 870ms;
+			animation-delay: 870ms;
+		}
+		
+		.text-ee {
+			left: 50.9rem;
+			-webkit-animation-delay: 950ms;
+			animation-delay: 950ms;
+		}
+		
+		.text-mm {
+			left: 54.9rem;
+			-webkit-animation-delay: 1030ms;
+			animation-delay: 1030ms;
+		}
+		
+		.text-eee {
+			left: 60rem;
+			-webkit-animation-delay: 1110ms;
+			animation-delay: 1110ms;
+		}
+		
+		.text-nn {
+			left: 63.9rem;
+			-webkit-animation-delay: 1190ms;
+			animation-delay: 1190ms;
+		}
+		
+		.text-tt {
+			left: 68.9rem;
+			-webkit-animation-delay: 1270ms;
+			animation-delay: 1270ms;
+		}
+
+		.coast {
+			position: absolute;
+			left: 1.3rem;
+			bottom: 0.5rem;
+			width: 6.2rem;
+			height: 2.2rem;
+			display: inline-block;
+			-webkit-animation: coast 2100ms linear infinite;
+			animation: coast 2100ms linear infinite;
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+		}
+
+		.wave-rel-wrap {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			-webkit-perspective: 3rem;
+			perspective: 3rem;
+			-webkit-perspective-origin: 0%, 50%;
+			perspective-origin: 0%, 50%;
+		}
+
+		.wave {
+			position: absolute;
+			width: 6.2rem;
+			height: 2.2rem;
+			border-radius: 1.1rem;
+			background: radial-gradient(ellipse at center, #74f1fc 0%, #32e6ff 73%, #15c7fa 100%);
+			display: inline-block;
+			-webkit-animation: wave 2100ms linear infinite;
+			animation: wave 2100ms linear infinite;
+			will-change: width;
+			-webkit-transform: translateZ(0) scale(0);
+			transform: translateZ(0) scale(0);
+		}
+
+		.delay {
+			-webkit-animation-delay: 1050ms;
+			animation-delay: 1050ms;
+		}
+
+		@-webkit-keyframes text {
+			0% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			30% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			45% {
+				-webkit-transform: translate3d(0, -4rem, 0);
+				transform: translate3d(0, -4rem, 0);
+			}
+			100% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+		}
+
+		@keyframes text {
+			0% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			30% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			45% {
+				-webkit-transform: translate3d(0, -4rem, 0);
+				transform: translate3d(0, -4rem, 0);
+			}
+			100% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+		}
+		
+		@-webkit-keyframes text-c {
+			0% {
+				-webkit-transform: translate3d(0, -4rem, 0);
+				transform: translate3d(0, -4rem, 0);
+			}
+			38% {
+				-webkit-transform: translate3d(0, -4rem, 0);
+				transform: translate3d(0, -4rem, 0);
+			}
+			69% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			100% {
+				-webkit-transform: translate3d(0, -4rem, 0);
+				transform: translate3d(0, -4rem, 0);
+			}
+		}
+
+		@keyframes text-c {
+			0% {
+				-webkit-transform: translate3d(0, -4rem, 0);
+				transform: translate3d(0, -4rem, 0);
+			}
+			38% {
+				-webkit-transform: translate3d(0, -4rem, 0);
+				transform: translate3d(0, -4rem, 0);
+			}
+			69% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			100% {
+				-webkit-transform: translate3d(0, -4rem, 0);
+				transform: translate3d(0, -4rem, 0);
+			}
+		}
+		
+		@-webkit-keyframes coast {
+			0% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			23% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			50% {
+				-webkit-transform: translate3d(16rem, 0, 0);
+				transform: translate3d(16rem, 0, 0);
+			}
+			100% {
+				-webkit-transform: translate3d(16rem, 0, 0);
+				transform: translate3d(16rem, 0, 0);
+			}
+		}
+
+		@keyframes coast {
+			0% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			23% {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+			50% {
+				-webkit-transform: translate3d(66rem, 0, 0);
+				transform: translate3d(66rem, 0, 0);
+			}
+			100% {
+				-webkit-transform: translate3d(66rem, 0, 0);
+				transform: translate3d(66rem, 0, 0);
+			}
+		}
+		
+		@-webkit-keyframes wave {
+			0% {
+				-webkit-transform: scale(0);
+				transform: scale(0);
+				width: 2.2rem;
+			}
+			10% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+			23% {
+				width: 2.2rem;
+			}
+			32% {
+				width: 6.1rem;
+			}
+			42% {
+				width: 5rem;
+				-webkit-transform: rotateY(0deg) scale(1, 1);
+				transform: rotateY(0deg) scale(1, 1);
+			}
+			51% {
+				-webkit-transform: rotateY(90deg) scale(0.6, 0.2);
+				transform: rotateY(90deg) scale(0.6, 0.2);
+			}
+			52% {
+				-webkit-transform: rotateY(90deg) scale(0);
+				transform: rotateY(90deg) scale(0);
+			}
+			100% {
+				-webkit-transform: rotateY(90deg) scale(0);
+				transform: rotateY(90deg) scale(0);
+			}
+		}
+
+		@keyframes wave {
+			0% {
+				-webkit-transform: scale(0);
+				transform: scale(0);
+				width: 2.2rem;
+			}
+			10% {
+				-webkit-transform: scale(1);
+				transform: scale(1);
+			}
+			23% {
+				width: 2.2rem;
+			}
+			32% {
+				width: 6.1rem;
+			}
+			42% {
+				width: 5rem;
+				-webkit-transform: rotateY(0deg) scale(1, 1);
+				transform: rotateY(0deg) scale(1, 1);
+			}
+			51% {
+				-webkit-transform: rotateY(90deg) scale(0.6, 0.2);
+				transform: rotateY(90deg) scale(0.6, 0.2);
+			}
+			52% {
+				-webkit-transform: rotateY(90deg) scale(0);
+				transform: rotateY(90deg) scale(0);
+			}
+			100% {
+				-webkit-transform: rotateY(90deg) scale(0);
+				transform: rotateY(90deg) scale(0);
+			}
+		}
+		
+		<!--For Falling Decoration-->
+		body {
+			margin: 0;
+			width: 100vw;
+			height: 100vh;
+			position: relative;
+		}
+
+		canvas {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+		
+		
+		
+	</style>
+
+	</HEAD>
+	<BODY>
+	
+	<!-- Navigation Bar-->
+	
+		<div class="navi-left">
+			<a href="index.html" style="z-index:2;position:relative">HOME</a>
+
+			<a href="view.php" style="z-index:2;position:relative">VIEW ALL USERS</a>
+	
+			<a href="transfer.html" style="z-index:2;position:relative">TRANSFER CREDIT</a>
+		</div>
+		
+	<!-- For Falling Decoration-->
+	
+		<canvas style="z-index:1" id="canvas"></canvas>
+		<script>
+			
+		
+			const canvasEl = document.querySelector('#canvas');
+
+			const w = canvasEl.width = window.innerWidth;
+			const h = canvasEl.height = window.innerHeight * 2;
+
+			function loop() {
+				requestAnimationFrame(loop);
+				ctx.clearRect(0,0,w,h);
+  
+				confs.forEach((conf) => {
+					conf.update();
+					conf.draw();
+				})
+			}
+
+			function Confetti () {
+				//construct confetti
+				const colours = ['#fde132', '#009bde', '#ff6b00'];
+  
+				this.x = Math.round(Math.random() * w);
+				this.y = Math.round(Math.random() * h)-(h/2);
+				this.rotation = Math.random()*360;
+
+				const size = Math.random()*(w/60);
+				this.size = size < 15 ? 15 : size;
+
+				this.color = colours[Math.floor(colours.length * Math.random())];
+
+				this.speed = this.size/7;
+  
+				this.opacity = Math.random();
+
+				this.shiftDirection = Math.random() > 0.5 ? 1 : -1;
+			}
+
+			Confetti.prototype.border = function() {
+				if (this.y >= h) {
+					this.y = h;
+				}
+			}
+
+			Confetti.prototype.update = function() {
+				this.y += this.speed;
+  
+				if (this.y <= h) {
+					this.x += this.shiftDirection/5;
+					this.rotation += this.shiftDirection*this.speed/100;
+				}
+
+				this.border();
+			};
+
+			Confetti.prototype.draw = function() {
+				ctx.beginPath();
+				ctx.arc(this.x, this.y, this.size, this.rotation, this.rotation+(Math.PI/2));
+				ctx.lineTo(this.x, this.y);
+				ctx.closePath();
+				ctx.globalAlpha = this.opacity;
+				ctx.fillStyle = this.color;
+				ctx.fill();
+			};
+
+			const ctx = canvasEl.getContext('2d');
+			const confNum = Math.floor(w / 3);
+			const confs = new Array(confNum).fill().map(_ => new Confetti());
+
+			loop();
+
+		</script>
+		
+		
+	<!-- For Dancing wave-->
+		
+		<div class="container">
+			<div class="coast">
+				<div class="wave-rel-wrap">
+					<div class="wave">
+					</div>
+				</div>
+			</div>
+			<div class="coast delay">
+				<div class="wave-rel-wrap">
+					<div class="wave delay"></div>
+				</div>
+			</div>
+			<div class="text text-c">C</div>
+			<div class="text text-r">R</div>
+			<div class="text text-e">E</div>
+			<div class="text text-d">D</div>
+			<div class="text text-i">I</div>
+			<div class="text text-t">T</div>
+			<div class="text text-m">M</div>
+			<div class="text text-a">A</div>
+			<div class="text text-n">N</div>
+			<div class="text text-aa">A</div>
+			<div class="text text-g">G</div>
+			<div class="text text-ee">E</div>
+			<div class="text text-mm">M</div>
+			<div class="text text-eee">E</div>
+			<div class="text text-nn">N</div>
+			<div class="text text-tt">T</div>
+		</div>
+		
+	</BODY>
+</HTML>

@@ -1,0 +1,139 @@
+
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" type="text/css" href="navihome.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		
+		<style>	
+		
+		body
+		{
+			background-image:url('transfer.jpg');
+			background-size:100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			position: absolute;
+			width:80%;
+			height:12%;
+			background-position:bottom-left;
+			z-index:10000000;
+		}
+		
+		.navi-left a 
+		{
+			color: crimson;
+		}
+		
+		</style>
+		
+		<script>
+			function validate(){
+				
+				var sender =document.forms["trans"]["pref1select"].value;
+				if(sender=="select")
+				{
+					alert("Please Select A Sender");
+					return false;
+				}
+				
+				var receiver =document.forms["trans"]["pref2select"].value;
+				if(receiver=="select")
+				{
+					alert("Please Select A Receiver");
+					return false;
+				}
+				return true;
+			}
+		</script>
+		
+		
+	</HEAD>
+	<BODY>
+		<div class="navi-left">
+			<a href="index.html">HOME</a>
+			<a href="view.php">VIEW ALL USERS</a>
+			<a href="transfer.html">TRANSFER CREDIT</a>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		
+		<form name="trans" method="POST" action="transfer.php" onsubmit="return validate(this)">
+			<TABLE cellpadding='15px' cellspacing='10px' style="margin-left:50px">
+				<TR>
+					<TD><label class="w3-text-blue"><b>SENDER</b></label></TD>
+					<TD>
+						<select id="pref1select" name="pref1select" class="preferenceSelect">
+						<option value="select">--select--</option>
+						<option value="1">1:ANKITA</option>
+						<option value="2">2:JAY</option>
+						<option value="3">3:JUHI</option>
+						<option value="4">4:MANISH</option>
+						<option value="5">5:POONAM</option>
+						<option value="6">6:PRATIK</option>
+						<option value="7">7:PRIYA</option>
+						<option value="8">8:RONAK</option>
+						<option value="9">9:SWEEDAL</option>
+						<option value="10">10:VARSHA</option>
+						</select>
+					</TD>
+				</TR>
+				<TR>
+					<TD><label class="w3-text-blue"><b>RECEIVER</b></label></TD>
+					<TD>
+						<select id="pref2select" name="pref2select" class="preferenceSelect">
+						<option value="select">--select--</option>
+						<option value="1">1:ANKITA</option>
+						<option value="2">2:JAY</option>
+						<option value="3">3:JUHI</option>
+						<option value="4">4:MANISH</option>
+						<option value="5">5:POONAM</option>
+						<option value="6">6:PRATIK</option>
+						<option value="7">7:PRIYA</option>
+						<option value="8">8:RONAK</option>
+						<option value="9">9:SWEEDAL</option>
+						<option value="10">10:VARSHA</option>
+						</select>
+					</TD>
+				</TR>
+				<TR>
+					<TD><label class="w3-text-blue"><b>CREDIT</b></label></TD>
+					<TD><input type="text" id="amt" name="amt" required></input>
+				<TR>
+					<TH colspan='2' align="center" ><input type ="submit" value=" Transfer" class="w3-btn w3-blue"></TH>
+				</TR>
+			</TABLE>
+			<script>
+				$(document).ready(function() {
+					$(".preferenceSelect").change(function() {
+						// Get the selected value
+						var selected = $("option:selected", $(this)).val();
+							// Get the ID of this element
+						var thisID = $(this).attr("id");
+							// Reset so all values are showing:
+						$(".preferenceSelect option").each(function() {
+							$(this).show();
+						});
+						$(".preferenceSelect").each(function() {
+							if ($(this).attr("id") != thisID) {
+								$("option[value='" + selected + "']", $(this)).hide();
+							}
+						});
+					});
+				});
+			</script>	
+		</form>
+	</BODY>
+</HTML>
+
+<!--<?php
+
+
+
+
+
+?>-->
